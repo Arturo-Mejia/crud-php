@@ -1,0 +1,44 @@
+body
+{
+    background: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.one
+{
+    overflow:scroll;
+    height:550px;
+}
+.two
+{
+    padding: 10px;
+}
+h1
+{   
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (min-width: 100px) {
+    .sectable
+    {  
+        display: block;
+        -webkit-box-shadow: 10px 10px 50px 0px rgba(227,227,227,1);
+        -moz-box-shadow: 10px 10px 50px 0px rgba(227,227,227,1);
+        box-shadow: 10px 10px 50px 0px rgba(227,227,227,1);
+        margin: 20px;
+    }
+  }
+
+@media (min-width: 800px) {
+    .sectable
+    {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        -webkit-box-shadow: 10px 10px 50px 0px rgba(227,227,227,1);
+        -moz-box-shadow: 10px 10px 50px 0px rgba(227,227,227,1);
+        box-shadow: 10px 10px 50px 0px rgba(227,227,227,1);
+        margin: 20px;
+        gap: 10px;
+    }
+  }
